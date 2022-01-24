@@ -1,0 +1,223 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    height:100vh;
+}
+
+#entete{
+    height: 20%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color:rgb(255, 241, 223);
+    box-shadow: 0px 20px 15px rgb(255, 241, 223);
+
+}
+
+h1{
+    padding-top: 50px;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+}
+
+nav{
+    padding-top: 20px;
+    display: flex;
+}
+
+button{
+    margin: 40px;
+    padding: 10px;
+    width: 300px;
+    height: 40px;
+    border-radius: 15px;
+    box-shadow: 2px 2px 2px black;
+    position:relative;
+    font-size: 17px;
+    overflow: hidden;
+    transition: all 0.3s;
+}
+
+button:before{
+    content:"Afrique";
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 17px;
+    color: white;
+    position: absolute;
+    top: -200px;
+    left: -230px;
+    width: 360px;
+    height: 120px;
+    border: 2px solid black;
+    border-radius: 70%;
+    transform: rotate(90deg);
+    transition: all 1.5s;
+}
+
+.Africa:before{
+    content:"Afrique";
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 17px;
+    color: black;
+    position: absolute;
+    top: -200px;
+    left: -220px;
+    width: 360px;
+    height: 80px;
+    border: none;
+    box-shadow: 40px 0px 40px rgb(233, 178, 0);
+    background-color: rgb(233, 178, 0);
+    border-radius: 70%;
+    transform: rotate(90deg);
+    transition: all 1.5s;
+}
+
+.America:before{
+    content:"Amérique";
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 17px;
+    color: black;
+    position: absolute;
+    top: -200px;
+    left: -220px;
+    width: 360px;
+    height: 80px;
+    border: none;
+    box-shadow: 40px 0px 40px rgb(255, 211, 65);
+    background-color: rgb(255, 211, 65);
+    border-radius: 70%;
+    transform: rotate(90deg);
+    transition: all 1.5s;
+}
+
+.Asia:before{
+    content:"Asie";
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 17px;
+    color: black;
+    position: absolute;
+    top: -200px;
+    left: -220px;
+    width: 360px;
+    height: 80px;
+    border: none;
+    box-shadow: 40px 0px 40px rgb(233, 178, 0);
+    background-color: rgb(233, 178, 0);
+    border-radius: 70%;
+    transform: rotate(90deg);
+    transition: all 1.5s;
+}
+
+.Europe:before{
+    content:"Europe";
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 17px;
+    color: black;
+    position: absolute;
+    top: -200px;
+    left: -220px;
+    width: 360px;
+    height: 80px;
+    border: none;
+    box-shadow: 40px 0px 40px rgb(255, 211, 65);
+    background-color: rgb(255, 211, 65);
+    border-radius: 70%;
+    transform: rotate(90deg);
+    transition: all 1.5s;
+}
+
+.Oceania:before{
+    content:"Océanie";
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 17px;
+    color: black;
+    position: absolute;
+    top: -200px;
+    left: -220px;
+    width: 360px;
+    height: 80px;
+    border: none;
+    box-shadow: 40px 0px 40px rgb(233, 178, 0);
+    background-color: rgb(233, 178, 0);
+    border-radius: 70%;
+    transform: rotate(90deg);
+    transition: all 1.5s;
+}
+
+
+button:hover{
+    color: transparent;
+}
+
+button:hover:before{
+    top: -22px;
+    left: -35px;
+    transform: rotate(0deg);
+}
+
+button:nth-child(2n-1){
+    background-color: rgb(255, 211, 65);
+}
+
+button:nth-child(2n){
+    background-color:rgb(233, 178, 0);
+}
+
+#corps{
+    height: 100vh;
+    background-color: rgb(255, 223, 181);
+    position: relative;
+    z-index: -1;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 50px;
+    padding-top: 50px;
+}
+
+.conteneur{
+    display: flex;
+    padding: 20px;
+    width: 400px;
+    height: 130px;
+}
+
+.flag{
+    width: 120px;
+    height: 120px;
+    position: relative;
+    z-index: -1;
+    border-radius: 50%;
+    box-shadow: 8px 8px 15px black;
+}
+
+.country{
+    font-size: 1.5em;
+    font-weight: 1000;
+    padding-top: 10px;
+    padding-left: 30px;
+    
+}
+
+.capital{
+    position: relative;
+    top: 110px;
+    right: 60px;
+    font-size: 23px;
+    font-style: italic;
+}
